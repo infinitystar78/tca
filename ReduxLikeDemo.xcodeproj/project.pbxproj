@@ -14,6 +14,9 @@
 		CEDABF01291BC573001E91F8 /* ReduxLikeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDABF00291BC573001E91F8 /* ReduxLikeDemoTests.swift */; };
 		CEDABF0B291BC573001E91F8 /* ReduxLikeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDABF0A291BC573001E91F8 /* ReduxLikeDemoUITests.swift */; };
 		CEDABF0D291BC573001E91F8 /* ReduxLikeDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDABF0C291BC573001E91F8 /* ReduxLikeDemoUITestsLaunchTests.swift */; };
+		CEDABF1C291BC659001E91F8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDABF1B291BC659001E91F8 /* AppState.swift */; };
+		CEDABF1E291BC69F001E91F8 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDABF1D291BC69F001E91F8 /* RecipeModel.swift */; };
+		CEDABF20291BCCF8001E91F8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDABF1F291BCCF8001E91F8 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		CEDABF06291BC573001E91F8 /* ReduxLikeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReduxLikeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDABF0A291BC573001E91F8 /* ReduxLikeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxLikeDemoUITests.swift; sourceTree = "<group>"; };
 		CEDABF0C291BC573001E91F8 /* ReduxLikeDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxLikeDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEDABF1B291BC659001E91F8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CEDABF1D291BC69F001E91F8 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		CEDABF1F291BCCF8001E91F8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,11 @@
 		CEDABEEE291BC570001E91F8 /* ReduxLikeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CEDABEEF291BC570001E91F8 /* ReduxLikeDemoApp.swift */,
-				CEDABEF1291BC570001E91F8 /* ContentView.swift */,
+				CEDABF1A291BC622001E91F8 /* App */,
+				CEDABF19291BC617001E91F8 /* Views */,
 				CEDABEF3291BC573001E91F8 /* Assets.xcassets */,
 				CEDABEF5291BC573001E91F8 /* Preview Content */,
+				CEDABF1D291BC69F001E91F8 /* RecipeModel.swift */,
 			);
 			path = ReduxLikeDemo;
 			sourceTree = "<group>";
@@ -125,6 +132,24 @@
 				CEDABF0C291BC573001E91F8 /* ReduxLikeDemoUITestsLaunchTests.swift */,
 			);
 			path = ReduxLikeDemoUITests;
+			sourceTree = "<group>";
+		};
+		CEDABF19291BC617001E91F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEDABEF1291BC570001E91F8 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEDABF1A291BC622001E91F8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEDABEEF291BC570001E91F8 /* ReduxLikeDemoApp.swift */,
+				CEDABF1B291BC659001E91F8 /* AppState.swift */,
+				CEDABF1F291BCCF8001E91F8 /* NetworkService.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +282,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEDABF20291BCCF8001E91F8 /* NetworkService.swift in Sources */,
+				CEDABF1C291BC659001E91F8 /* AppState.swift in Sources */,
+				CEDABF1E291BC69F001E91F8 /* RecipeModel.swift in Sources */,
 				CEDABEF2291BC570001E91F8 /* ContentView.swift in Sources */,
 				CEDABEF0291BC570001E91F8 /* ReduxLikeDemoApp.swift in Sources */,
 			);
